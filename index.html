@@ -5,38 +5,283 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/remixicon.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="css/iconmoon/style.css">
     <title>Borjaeditions</title>
 </head>
 <body>
 
-    <!--<p>Hellow world</p>-->
+    <header class="profile container">
+        <!--Theme button-->
+        <i class="ri-moon-line change-theme" id="theme-button"></i>
+        <div class="profile__container grid">
+            <div class="profile__data">
+                <div class="profile__border">
+                    <div class="profile__perfil">
+                        <img src="images/borja-mini.png" alt="">
+                    </div>
+                </div>
+                <h2 class="profile__name">Alejandro Borja Hernández</h2>
+                <h3 class="profile__profession">Web Developer</h3>
 
-    <footer>
-        <div class="waves">
+                <ul class="profile__social">
+                    <a href="" class="profile__social-link"><span class="icon-github"></span></a>
+                    <a href="" class="profile__social-link"><span class="icon-shop1"></span></a>
+                    <a href="" class="profile__social-link"><span class="icon-instagram-with-circle"></span></a>
+                    <a href="" class="profile__social-link"><span class="icon-telegram"></span></a>
+                </ul>
+            </div>
+            <div class="profile__info grid">
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">8</h3>
+                    <p class="profile__info-description">Years of <br> work </p>
+                </div>
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">+5</h3>
+                    <p class="profile__info-description">Completed <br> projects </p>
+                </div>
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">many</h3>
+                    <p class="profile__info-description">Satisfied <br> customers</p>
+                </div>
+            </div>
+            <div class="profile__buttons">
+                <!--TODO Agregar curriculum vite-->
+                <a download="" class="button">
+                Dowload CV <span class="icon-cloud_download"></span>
+                </a>
+                <div class="profile__buttons-small">
 
-            <div class="wave" id="wave1"></div>
-            <div class="wave" id="wave2"></div>
-            <div class="wave" id="wave3"></div>
-            <div class="wave" id="wave4"></div>
+                    <a href="" class="button button__gray button__small">
+                        <span class="icon-telegram"></span>
+                    </a>
+                    <a href="" class="button button__gray button__small">
+                        <span class="icon-email1"></span>
+                    </a>
 
+                </div>
+            </div>
         </div>
-        <ul class="footer-icons">
-            <li><a href=""><span class="icon-github"></span>
-            </a></li>
-            <li><a href="https://play.google.com/store/apps/developer?id=Borjaeditions" target="_blank"><span class="icon-shop1"></span></a></li>
-            <li><a href=""><span class="icon-instagram-with-circle"></span></a></li>
-            <li><a href=""><span class="icon-telegram"></span></a></li>
-        </ul>
-        <ul class="menu">
-            <li><a href="">Home</a></li>
-            <li><a href="">About me</a></li>
-            <li><a href="">Team</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-        <p>2022 Borjaeditions | All Rights Reserved</p>
+    </header>
+    <main class="main">
+        <section class="filters container">            
+            <ul class="filters__content">
+                <button class="filters__button filter-tab-active" data-target="#projects">
+                    Projects
+                </button>
+                <button class="filters__button" data-target="#skills">
+                    Skills
+                </button>  
+            </ul>
+            <div class="filters__sections">
 
-    </footer>
+                <div class="projects__content grid filters__active" data-content id="projects">                    
+                    <article class="projects__card">
+                        <img src="images/project1.jpg" alt="" class="projects__img">
+                        <div class="projects__modal">
+                            <div>                                
+                                <span class="projects__subtitle">QrBit</span>
+                                <h3 class="projects__title">Mobil aplication</h3>
+                                <a href="" class="projects__button button button__small">
+
+                                    <span class="icon-link"></span>
+
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="projects__card">
+                        <img src="images/project2.jpg" alt="" class="projects__img">
+                        <div class="projects__modal">
+                            <div>                                
+                                <span class="projects__subtitle">Design</span>
+                                <h3 class="projects__title">Vectors and animations</h3>
+                                <a href="" class="projects__button button button__small">
+
+                                    <span class="icon-link"></span>
+
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="projects__card">
+                        <img src="images/project3.jpg" alt="" class="projects__img">
+                        <div class="projects__modal">
+                            <div>                                
+                                <span class="projects__subtitle">Majo</span>
+                                <h3 class="projects__title">Business page</h3>
+                                <a href="" class="projects__button button button__small">
+
+                                    <span class="icon-link"></span>
+
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="projects__card">
+                        <img src="images/project4.jpg" alt="" class="projects__img">
+                        <div class="projects__modal">
+                            <div>                                
+                                <span class="projects__subtitle">Various</span>
+                                <h3 class="projects__title">Another proyects</h3>
+                                <a href="" class="projects__button button button__small">
+
+                                    <span class="icon-link"></span>
+
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="skills__content grid" data-content id="skills">
+
+                    <div class="skills__area">
+                        
+                        <h3 class="skills__title">
+                            Lenguajes
+                        </h3>
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <span class="icon-check_circle"></span>
+                                    <div>
+                                        <h3 class="skills__name">HTML</h3>
+                                        <span class="skills__level">Advanced</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <span class="icon-check_circle"></span>
+                                    <div>
+                                        <h3 class="skills__name">CSS</h3>
+                                        <span class="skills__level">Advanced</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <span class="icon-check_circle"></span>
+                                    <div>
+                                        <h3 class="skills__name">JavaScript</h3>
+                                        <span class="skills__level">Advanced</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <span class="icon-check_circle"></span>
+                                    <div>
+                                        <h3 class="skills__name">PHP</h3>
+                                        <span class="skills__level">Advanced</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <span class="icon-check_circle"></span>
+                                    <div>
+                                        <h3 class="skills__name">Dart</h3>
+                                        <span class="skills__level">Advanced</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <span class="icon-check_circle"></span>
+                                    <div>
+                                        <h3 class="skills__name">Python</h3>
+                                        <span class="skills__level">Advanced</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__area">
+                        
+                        <h3 class="skills__title">
+                            Frameworks
+                        </h3>
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <span class="icon-check_circle"></span>
+                                    <div>
+                                        <h3 class="skills__name">Angular</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <span class="icon-check_circle"></span>
+                                    <div>
+                                        <h3 class="skills__name">Bootstrap</h3>
+                                        <span class="skills__level">Advanced</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <span class="icon-check_circle"></span>
+                                    <div>
+                                        <h3 class="skills__name">Flutter</h3>
+                                        <span class="skills__level">Advanced</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <span class="icon-check_circle"></span>
+                                    <div>
+                                        <h3 class="skills__name">Wordpress</h3>
+                                        <span class="skills__level">Advanced</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <span class="icon-check_circle"></span>
+                                    <div>
+                                        <h3 class="skills__name">JQuery</h3>
+                                        <span class="skills__level">Advanced</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <span class="icon-check_circle"></span>
+                                    <div>
+                                        <h3 class="skills__name">Extra</h3>
+                                        <span class="skills__level">Advanced</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <div class="bottom">
+
+        <footer>
+            <div class="waves">
     
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+    
+            </div>
+            <ul class="footer-icons">
+                <li><a href=""><span class="icon-github"></span>
+                </a></li>
+                <li><a href="https://play.google.com/store/apps/developer?id=Borjaeditions" target="_blank"> <span class="icon-shop1"></span></a></li>
+                <li><a href=""><span class="icon-instagram-with-circle"></span></a></li>
+                <li><a href=""><span class="icon-telegram"></span></a></li>
+            </ul>
+            <ul class="menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">About me</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">Contact</a></li>                
+            </ul>
+            <p>2022 Borjaeditions | All Rights Reserved</p>
+    
+        </footer>
+
+    </div>
+    <script src="/js/scrollreveal.min.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>
